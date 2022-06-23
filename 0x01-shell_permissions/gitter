@@ -3,6 +3,6 @@ git add .
 
 git commit -m "commits on shell permissions"
 
-git push orign HEAD:master
+git push origin HEAD:master
 
 
