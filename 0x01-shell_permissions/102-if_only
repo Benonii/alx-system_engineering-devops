@@ -1,2 +1,2 @@
 #!/bin/bash
---from =guillaume chown betty hello
+chown --from =guillaume betty hello
