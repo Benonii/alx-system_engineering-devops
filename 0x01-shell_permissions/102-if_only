@@ -1,2 +1,2 @@
 #!/bin/bash
-chown betty hello if [g==guillaume]
+--from g=guillaume chown betty hello
