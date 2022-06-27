@@ -1,2 +1,2 @@
 #!/bin/bash
-This is a readme file
+echo 'This is a readme file'
