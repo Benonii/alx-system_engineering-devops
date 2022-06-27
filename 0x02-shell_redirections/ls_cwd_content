@@ -1,0 +1,20 @@
+total 60
+drwxr-xr-x 2 root root 318 Jun 27 08:18 .
+drwxr-xr-x 6 root root 121 Jun 27 06:50 ..
+-rw-r--r-- 1 root root  52 Jun 27 08:09 \*\\+
+-rwxr-xr-x 1 root root  27 Jun 27 06:52 0-hello_world
+-rwxr-xr-x 1 root root  30 Jun 27 07:01 1-confused_smiley
+-rwxr--r-- 1 root root  28 Jun 27 07:04 2-hellofile
+-rwxr--r-- 1 root root  39 Jun 27 07:07 3-twofiles
+-rwxr--r-- 1 root root  29 Jun 27 07:09 4-lastlines
+-rwxr--r-- 1 root root  29 Jun 27 07:14 5-firstlines
+-rwxr--r-- 1 root root  38 Jun 27 07:39 6-third_line
+-rwxr--r-- 1 root root  89 Jun 27 08:09 7-file
+-rwxr--r-- 1 root root  36 Jun 27 08:18 8-cwd_state
+-rw-r--r-- 1 root root  12 Jun 27 07:43 *\"Best School"\\*$?*****:)
+-rwxr-xr-x 1 root root  99 Jun 27 06:52 gitit
+-rw-r--r-- 1 root root   0 Jun 27 07:33 head
+-rw-r--r-- 1 root root  38 Jun 27 07:30 iacta
+-rw-r--r-- 1 root root   0 Jun 27 08:18 ls_cwd_content
+-rwxr--r-- 1 root root  41 Jun 27 06:53 README.md
+-rw-r--r-- 1 root root  15 Jun 27 07:33 tail
