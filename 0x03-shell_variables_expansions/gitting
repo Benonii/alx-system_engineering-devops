@@ -1,0 +1,6 @@
+#!/bin/bash
+git add .
+
+git commit -m "Commits on shell variables and expansions"
+
+git push origin HEAD:master
