@@ -1,2 +1,2 @@
 #!/bin/bash
-sort -u < read list_of_words
+sort -u 
