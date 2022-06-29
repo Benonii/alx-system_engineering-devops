@@ -1,3 +1,3 @@
 #!/bin/bash
-sort -u 
+sort -k 2 | uniq -u 
 
