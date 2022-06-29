@@ -1,2 +1,2 @@
 #!/bin/bash
-find ./ -type f,d -empty -print -name 
+find ./ -type f,d -empty -printf | fmt 
