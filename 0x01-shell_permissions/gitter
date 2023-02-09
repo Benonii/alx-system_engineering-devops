@@ -1,0 +1,5 @@
+git add .
+
+git commit -m "These commits are for the shell permissions project"
+
+git push
