@@ -1,0 +1,2 @@
+#!/bin/bash
+cd $PATH | mkdir /action
