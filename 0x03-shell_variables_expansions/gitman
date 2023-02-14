@@ -3,3 +3,5 @@
 git add .
 
 git commit -m "Commits for the advanced projects"
+
+git push
