@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -rd $HOME | wc -l
+find $HOME -type d | wc -l
