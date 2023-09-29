@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+for content in *; do
+	if [[ $content != .* ]]; then
+		echo "${content#*-}"
+	fi
+done
