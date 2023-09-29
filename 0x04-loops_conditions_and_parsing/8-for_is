@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Prints the name of all files in the current directory excluding the number
+#+ and the dash
 
 for content in *; do
 	if [[ $content != .* ]]; then

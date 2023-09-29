@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Imitates a clock
 
 hour=0
 minute=1
