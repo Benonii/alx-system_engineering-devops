@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Displays 'To infiniyt and beyond' and when recieving a SIGTERM displays
+#+ 'I am invincible'
+
+while true
+do
+	printf "To infinity and beyond\n"
+	trap 'echo "I am invincible!!!"' SIGTERM
+	sleep 2
+done

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#stops `4-to_infinity_and_beyond` using kill
+
+pid=$(pgrep -f "4-to_infinity_and_beyond")
+
+kill "$pid"

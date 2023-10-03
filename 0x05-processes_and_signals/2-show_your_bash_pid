@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Displays lines containing the bash word
-# shellcheck disable=SC200
+# shellcheck disable=SC2009
 
 ps -U root u | grep "bash"
