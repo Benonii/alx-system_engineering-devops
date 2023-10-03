@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Does a lot of stuff
+
+mkdir -p var/run/
+touch var/run/my_process.pid
+
+pgrep -f "var/run/myscript.pid" > var/run/myscript.pid
+
+cleanup() {
+	printf "I hate the kill command\n"
+	rm -f "var/run/myscript.pid"
+	exit 0
+}
+while true
+do
+	printf "To Infinity and beyond\n"
+	trap 'cleanup' SIGTERM SIGQUIT
+	trap 'echo "Y U no love me?!"' SIGINT
+	sleep 2
+done
