@@ -16,5 +16,4 @@ do
 	printf "To infinity and beyond\n"
 	trap 'cleanup' SIGTERM SIGQUIT
 	trap 'echo "Y U no love me?!"' SIGINT
-	sleep 2
 done
