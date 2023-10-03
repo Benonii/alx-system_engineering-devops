@@ -13,7 +13,7 @@ cleanup() {
 }
 while true
 do
-	printf "To Infinity and beyond\n"
+	printf "To infinity and beyond\n"
 	trap 'cleanup' SIGTERM SIGQUIT
 	trap 'echo "Y U no love me?!"' SIGINT
 	sleep 2
