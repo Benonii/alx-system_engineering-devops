@@ -2,4 +2,4 @@
 
 # Displays listening ports that only shows listening ports
 
-netstat -tuln | awk '%6 == "LISTEN" {print $4}'
+ss -tulnp
