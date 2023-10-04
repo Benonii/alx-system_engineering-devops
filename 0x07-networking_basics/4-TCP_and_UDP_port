@@ -2,4 +2,4 @@
 
 # Displays listening ports that only shows listening ports
 
-ss -tulnp
+netstat -tulnp
