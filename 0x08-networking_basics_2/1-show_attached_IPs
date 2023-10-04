@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Displays all active IPv4 IPs on the machine it's executed on
+
+ifconfig | awk -F ' *|:' '/inet / {print $3}'
