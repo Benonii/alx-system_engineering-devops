@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Configures an Ubuntu server with localhost resolving to 120.0.0.2 and
+#Configures an Ubuntu server with localhost resolving to 120.0.0.2 and
 #+ facebook.com resolving to 8.8.8.8
 
 sed 's/127.0.0.1/127.0.0.2/g' /etc/hosts > hosts.new
