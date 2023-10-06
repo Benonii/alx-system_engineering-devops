@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Displays listening ports that only shows listening ports
 
 netstat -tulnp
