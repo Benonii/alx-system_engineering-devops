@@ -1,4 +1,3 @@
-#!/usr/bin/pup
 # This manifest installs flask from pip3
 
 package { 'flask':
