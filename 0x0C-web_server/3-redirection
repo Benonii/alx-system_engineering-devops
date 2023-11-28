@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
 
-# commands to automatically configure a Ubuntu machine ti respect abve requirements
+# commands to automatically configure a Ubuntu machine that respects certain requirements
+
+sudo touch var/www/html/redirect.html
+echo "Moved Permanently" | sudo tee var/www/html/redirect.html
+echo "
+	location/redirect_me {
+		return 301 var/www/html/redirect.html;
+} " | sudo tee -a /etc/nginx/sites-available/redirect
