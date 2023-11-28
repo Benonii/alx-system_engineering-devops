@@ -1,4 +1,6 @@
 #!/usr/bin/env/bash
 # Configures a new Ubuntu machine to respect certain requirements
 
-
+sudo apt-get -y install nginx
+sudo cd /var/www/html; touch index.html
+sudo echo "<html> <body> Hello World! </body> </html>" > /var/www/htm/index.html
