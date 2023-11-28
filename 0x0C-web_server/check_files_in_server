@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Checks what files are in the home directory of the remote server
+
+ssh ubuntu@34.229.186.0 -i ~/.ssh/school 'ls ~/'
