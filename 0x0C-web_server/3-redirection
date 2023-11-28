@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # commands to automatically configure a Ubuntu machine that respects certain requirements
 
 sudo touch var/www/html/redirect.html
