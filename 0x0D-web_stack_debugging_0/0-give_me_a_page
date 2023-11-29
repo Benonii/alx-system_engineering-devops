@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # This was harder than I expected
 
-echo "ServerName localhost" >> /etc/apache2
-sudo systemctl start apache2
+echo "ServerName localhost" >> /etc/apache2.conf
+service apache2 start
