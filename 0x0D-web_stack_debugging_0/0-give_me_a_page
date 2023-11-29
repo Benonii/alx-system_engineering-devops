@@ -1,4 +1,4 @@
-#!/usr/bin/env/bash
+#!/usr/bin/env bash
 # This was harder than I expected
 
 sudo echo "ServerName localhost" >> /etc/apache2
