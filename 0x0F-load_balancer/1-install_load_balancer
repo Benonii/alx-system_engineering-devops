@@ -6,7 +6,7 @@ sudo apt-get -y install haproxy
 
 echo "
 frontend my_frontend
-        bind*:80
+        bind *:80
         mode http
         default_backend my_backend
 
