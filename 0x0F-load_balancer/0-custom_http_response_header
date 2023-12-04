@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script ensures each server responds with a custom header
+
+sudo apt-get update
+sudo apt-get install nginx
+sudo touch /var/www/html/index.html
+echo "Hello World!" | sudo tee /var/www/html/index.html
+sudo service nginx restart
+
+nginx_conf="/etc/nginx/nginx.conf"
+header_name="X_Served_By"
+echo "http {" | sudo tee -a $nginx_conf
+echo "    add_header $header_name $hostname;" | sudo tee -a $nginx_conf
+echo "}" | sudo tee -a $nginx_conf
+
+sudo service nginx restart
