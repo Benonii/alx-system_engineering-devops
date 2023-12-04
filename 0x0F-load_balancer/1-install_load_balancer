@@ -17,4 +17,4 @@ backend my_backend
 	server server2 34.232.76.218:80 check" | sudo tee -a /etc/haproxy/haproxy.cfg
 
 sudo systemctl stop nginx
-sudo systemctl restart haproxy
+sudo /etc/init.d/haproxy start
