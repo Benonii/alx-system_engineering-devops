@@ -6,16 +6,15 @@ sudo apt-get -y install haproxy
 
 echo "
 frontend my_frontend
-\tbind*:80
-\tmode http
-
-\tdefault_backend my_backend
+        bind*:80
+        mode http
+        default_backend my_backend
 
 backend my_backend
-\tmode http
-\tbalance roundrobin
-\tserver server1 54.146.81.93 check
-\tserver server2 34.232.76.218:80 check" | sudo tee -a /etc/haproxy/haproxy.cfg
+	mode http
+	balance roundrobin
+	server server1 54.146.81.93:80 check
+	server server2 34.232.76.218:80 check" | sudo tee -a /etc/haproxy/haproxy.cfg
 
 sudo systemctl stop nginx
 sudo systemctl restart haproxy
