@@ -1,4 +1,4 @@
-#!/usr/bin/ env bash
+#!/usr/bin/env bash
 # Fixes the problem
 
 sudo apt-get update
