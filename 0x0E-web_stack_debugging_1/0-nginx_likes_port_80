@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # Fixes the problem
 
-sudo apt-get update
-sudo apt-get install nginx
-rm /etc/nginx/sites-enabled/default
-ln -s /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default
-sudo service nginx restart
+cd /etc/nginx/sites-enabled/ || exit;
+# Delete the default file
+rm default;
+# Create symbolic link to the deafult file in sites-available
+ln -s /etc/nginx/sites-available/default default;
+# Restart Nginx
+service nginx restart
