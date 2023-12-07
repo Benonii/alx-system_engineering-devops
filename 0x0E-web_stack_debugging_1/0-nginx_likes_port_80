@@ -4,5 +4,5 @@
 sudo apt-get update
 sudo apt-get install nginx
 rm /etc/nginx/sites-enabled/default
-ln -sf /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default
+ln -sf /etc/nginx/sites-enabled/default /etc/nginx/sites-available
 sudo service nginx start
