@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# debuggin made short
+sed 's/8080/80/g' /etc/nginx/sites-available/default
+sudo service restart nginx
+kill -9 "$(cat /var/run/nginx.pid)"
