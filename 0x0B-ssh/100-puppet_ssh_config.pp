@@ -2,5 +2,5 @@
 
 file { '/root/.ssh/.ssh_config':
   ensure  => file,
-  content => "Host 75667-web-01\nHostName 54.146.81.93\nUser ubuntu\nIdentityFile ~/.ssh/school\nPasswordAuthentication no\n",
+  content => "Host 75667-web-01\n\tHostName 54.146.81.93\n\tUser ubuntu\n\tIdentityFile ~/.ssh/school\n\tPasswordAuthentication no\n",
 }
