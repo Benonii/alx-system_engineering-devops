@@ -1,6 +1,6 @@
 # Puppet file for installing nginx on the webserver
 
-class mginx {
+class nginx {
 	package { 'nginx':
 	  ensure => installed,
 	}
