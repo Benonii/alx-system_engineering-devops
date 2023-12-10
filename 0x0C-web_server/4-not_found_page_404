@@ -2,6 +2,6 @@
 # Creates a custom 404 page
 
 sudo touch /var/www/html/custom-404.html
-echo "Ceci n'est pas une page" | sudo tee /var/www/html/custom-404.html
+echo "Ceci n'est pas une page\n" | sudo tee /var/www/html/custom-404.html
 sudo sed -i '43a error_page 404 /custom-404.html;\n' /etc/nginx/nginx.conf
 sudo service nginx restart
