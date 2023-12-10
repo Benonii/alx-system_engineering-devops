@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Configueres haproxy on the load balancing server
 
-sudo apt-get update
+sudo apt-get -y update
 sudo apt-get -y install haproxy
 
 echo "
