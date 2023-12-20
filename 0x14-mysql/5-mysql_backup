@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Dumps the current state of the database and compresses it into a tar file
 
-mysqldump -u root -p "$1" --all-databases > backup.sql
+mysqldump -u root -p "$1" --databases > backup.sql
 
 tar -czvf 20-12-2023.tar.gz backup.sql
