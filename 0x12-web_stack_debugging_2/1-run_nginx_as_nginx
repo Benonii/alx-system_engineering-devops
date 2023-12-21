@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 # Changes the default user and changes the default server port to 8080
 
-sed -i "16a user nginx;\n" /etc/nginx/nginx.conf
-sed -i "71a server {\n\tlisten 8080;\n\tlisten[:]:8080;\n}" /etc/nginx/sites-available/default
+useradd nginx
+sudo sed -i "s/user www-data;/user nginx;/" /etc/nginx/nginx.conf
+sudo sed -i "s/80/8080/g" /etc/nginx/sites-available/default
+rm /etc/nginx/sites-enabled/default
+sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default;
+sudo service nginx restart
