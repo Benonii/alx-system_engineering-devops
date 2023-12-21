@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Temporaryly switches the user and executes the command whoami
+
+useradd "$1"
+sudo -u "$1" whoami
