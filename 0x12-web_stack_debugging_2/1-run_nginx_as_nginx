@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Changes the default user and changes the default server port to 8080
 
 sed -i "16a user nginx;\n" /etc/nginx/nginx.conf
 sed -i "71a server {\n\tlisten 8080;\n\tlisten[:]:8080;\n}" /etc/nginx/nginx.conf
