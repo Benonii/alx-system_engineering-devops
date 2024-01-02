@@ -25,5 +25,3 @@ if __name__ == '__main__':
           .format(employee['name'], len(completed_tasks), len(tasks)))
     for task in completed_tasks:
         print("\t{}".format(task))
-
-    # print(employee)
