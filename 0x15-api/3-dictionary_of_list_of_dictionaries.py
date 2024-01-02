@@ -31,10 +31,11 @@ if __name__ == '__main__':
                 completed_tasks.append(task['title'])
 
             task_dict = {
+                    "username": username,
                     "task": task['title'],
                     "completed": task['completed'],
-                    "username": username,
                     }
+
             task_list.append(task_dict)
 
         json_data[user_id] = task_list
