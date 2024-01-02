@@ -30,7 +30,3 @@ if __name__ == '__main__':
             csv_data = [task['userId'], username,
                         task['completed'], task['title']]
             csv_writer.writerow(csv_data)
-
-    with open(filename, 'r') as f:
-        for row in f:
-            print(row.strip())
