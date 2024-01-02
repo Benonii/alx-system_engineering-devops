@@ -12,17 +12,19 @@ if __name__ == '__main__':
     employees = requests.get('https://jsonplaceholder.typicode.com/users/')\
                         .json()
 
-    task_list = []
+    json_data = dict()
     for employee in employees:
         tasks = requests.get('https://jsonplaceholder.typicode.com/'
                              + 'todos?userId={}'
                              .format(employee['id'])).json()
 
+        user_id = str(employee['id'])
         name = employee['name']
         username = employee['username']
         filename = 'todo_all_employees.json'
 
         completed_tasks = []
+        task_list = []
 
         for task in tasks:
             if task['completed'] is True:
@@ -35,8 +37,7 @@ if __name__ == '__main__':
                     }
             task_list.append(task_dict)
 
-        with open(filename, 'w', newline='') as f:
-            json_data = {
-                    f"{employee['id']}": task_list
-                    }
-            json.dump(json_data, f)
+        json_data[user_id] = task_list
+
+    with open(filename, 'w', newline='') as f:
+        json.dump(json_data, f)
