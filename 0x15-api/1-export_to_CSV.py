@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
     name = employee['name']
     username = employee['username']
-    filename = 'USER_ID.csv'
+    filename = '{}.csv'.format(user_id)
 
     completed_tasks = []
     with open(filename, 'w', newline='') as f:
