@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
 ''' This module contains the function number_of_subscribers '''
-import requests
 import json
-import sys
+import requests
 
 
 def number_of_subscribers(subreddit):
