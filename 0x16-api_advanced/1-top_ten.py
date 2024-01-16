@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 ''' This module contains the function top_ten '''
-import requests
 import json
+import requests
 
 
 def top_ten(subreddit):
@@ -14,8 +14,8 @@ def top_ten(subreddit):
 
     data = response.get('data')
     if not data:
-        return 0
+        print(None)
     else:
-        # print(data.keys())
+        titles = []
         for child in data['children']:
             print(child['data']['title'])
