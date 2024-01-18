@@ -3,7 +3,7 @@
 $conf_file = '/etc/apache2/sites-available/000-default.conf'
 
 exec {'fix_root_dir_path':
-  command => "sed -i '12 s/$/\\/wp-content/' ${conf_file}",
+  command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
   path    => ['/usr/bin/', '/bin/'],
 }
 
