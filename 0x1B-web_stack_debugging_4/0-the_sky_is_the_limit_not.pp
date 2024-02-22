@@ -10,3 +10,4 @@ exec { 'reload_nginx':
   command => 'service nginx restart',
   path    => ['/bin', '/usr/bin'],
 }
+
