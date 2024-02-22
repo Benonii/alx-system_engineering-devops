@@ -5,3 +5,8 @@ exec { 'raise_defalut':
   command => 'sed -i "s/-n .*/-n 4096\"/" /etc/default/nginx',
   path    => ['/bin', '/usr/bin'],
 }
+
+exec { 'reload_nginx':
+  command => 'service nginx restart',
+  path    => ['/bin', '/usr/bin'],
+}
