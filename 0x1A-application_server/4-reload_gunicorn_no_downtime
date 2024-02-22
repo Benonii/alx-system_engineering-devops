@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Reload gunicorn gracefully
 
-master_pid=$(pgrep -f gunicorn)
+master_pid=$(pgrep -o gunicorn)
 
 kill -HUP "$master_pid" > /dev/null 2>&1;
