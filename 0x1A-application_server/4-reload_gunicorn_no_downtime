@@ -3,4 +3,4 @@
 
 master_pid=$(pgrep -f gunicorn)
 
-kill -HUP $master_pid
+kill -HUP "$master_pid" > /dev/null 2>&1;
